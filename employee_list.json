@@ -1,0 +1,132 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Manager",
+      "description": "Alice, a seasoned <b>manager</b> with over 10 years of experience.",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "age": 30
+    },
+    {
+      "id": 2,
+      "title": "Engineer",
+      "description": "Bob, an <i>innovative engineer</i> specializing in software development, with missing age data.",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "age": null
+    },
+    {
+      "id": 3,
+      "title": "Analyst",
+      "description": "Charlie, a detail-oriented analyst with expertise in market research, has an <email>email</email>.",
+      "name": "Charlie",
+      "email": "charlie@example",
+      "age": 25
+    },
+    {
+      "id": 4,
+      "title": "Developer",
+      "description": "David, a skilled developer proficient in multiple programming languages.",
+      "name": "David",
+      "email": "david@example.com",
+      "age": 45
+    },
+    {
+      "id": 5,
+      "title": "Consultant",
+      "description": "Eve, a <b>strategic consultant</b> with a strong background in business solutions.",
+      "name": "Eve",
+      "email": "eve@example.com",
+      "age": 35
+    },
+    {
+      "id": 6,
+      "title": "Intern",
+      "description": "Frank, an <i>enthusiastic intern</i> currently gaining experience, with a negative age value.",
+      "name": "Frank",
+      "email": "frank@example.com",
+      "age": -5
+    },
+    {
+      "id": 1,
+      "title": "Manager",
+      "description": "Duplicate entry for Alice, a seasoned manager with over 10 years of experience.",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "age": 30
+    },
+    {
+      "id": 2,
+      "title": "Engineer",
+      "description": "Duplicate entry for Bob, an innovative engineer specializing in software development, with missing age data.",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "age": null
+    },
+    {
+      "id": 7,
+      "title": "HR",
+      "description": "Grace, an experienced HR professional responsible for recruitment, with a non-numeric age value.",
+      "name": "Grace",
+      "email": "grace@example.com",
+      "age": "thirty"
+    },
+    {
+      "id": 8,
+      "title": "Sales",
+      "description": "Hank, a <b>dynamic sales representative</b> with a proven track record in sales.",
+      "name": "Hank",
+      "email": "hank@example.com",
+      "age": 40
+    },
+    {
+      "id": 9,
+      "title": "Support",
+      "description": "Ivy, a dedicated support specialist ensuring customer satisfaction, with an <i>email</i>.",
+      "name": "Ivy",
+      "email": "",
+      "age": 22
+    },
+    {
+      "id": 10,
+      "title": "Marketing",
+      "description": "James, a creative marketing strategist with a focus on digital marketing, has a <b>missing</b>.",
+      "name": null,
+      "email": "james@example.com",
+      "age": 28
+    },
+    {
+      "id": 11,
+      "title": "Assistant",
+      "description": "Kevin, an efficient administrative assistant with excellent organizational skills, has an <i>value</i>.",
+      "name": "Kevin",
+      "email": "kevin@example.com",
+      "age": 0
+    },
+    {
+      "id": 12,
+      "title": "Manager",
+      "description": "Laura, an experienced manager leading several projects, with <age>missing age data</age>.",
+      "name": "Laura",
+      "email": "laura@example.com",
+      "age": null
+    },
+    {
+      "id": 13,
+      "title": "Clerk",
+      "description": "Michael, a meticulous clerk responsible for record-keeping, has a <b>corrupted</b>.",
+      "name": "M!chael",
+      "email": "michael@example.com",
+      "age": 32
+    },
+    {
+      "id": 14,
+      "title": "Executive",
+      "description": "Nancy, a senior executive overseeing company operations, has an <i>invalid</i>.",
+      "name": "Nancy",
+      "email": "nancy@example.com",
+      "age": "NaN"
+    }
+  ]
+}
