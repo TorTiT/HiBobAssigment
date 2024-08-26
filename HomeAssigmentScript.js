@@ -1,10 +1,6 @@
 const axios = require("axios");
 const fs = require("fs");
 
-// Define the path to your JSON file
-const dataPath =
-  "C:\\Users\\moshereuveni\\OneDrive - Tel-Aviv University\\Desktop\\Moshe\\SalesForce\\מטלות בית\\HiBob -MIS Developer\\employee_list.json";
-
 // Function to call AI API
 async function callAIAPI(prompt) {
   const apiUrl =
@@ -126,13 +122,13 @@ function jsonToCSV(data) {
   return csvRows.join("\n");
 }
 
-// Function to load JSON data
-function loadJSON(filePath) {
+// Function to load JSON data from a URL
+async function loadJSONFromURL(url) {
   try {
-    const rawData = fs.readFileSync(filePath);
-    return JSON.parse(rawData);
+    const response = await axios.get(url);
+    return response.data; // Assuming the response is JSON
   } catch (error) {
-    console.error("Failed to load or parse JSON data:", error);
+    console.error("Failed to load or parse JSON data from URL:", error);
     return null;
   }
 }
@@ -147,8 +143,10 @@ async function processDataWithAI() {
   if (emailValidationCode) {
     eval(emailValidationCode); // Define the validateEmail function
 
-    // Load employee data
-    const data = loadJSON(dataPath);
+    // Load employee data from URL
+    const data = await loadJSONFromURL(
+      "https://raw.githubusercontent.com/TorTiT/HiBobAssigment/main/employee_list.json"
+    );
 
     if (data && Array.isArray(data.data)) {
       data.data.forEach((employee) => {
@@ -182,7 +180,10 @@ async function processDataWithAI() {
   }
 
   // Load and clean employee data
-  const employeeData = loadJSON(dataPath);
+  const employeeData = await loadJSONFromURL(
+    "https://raw.githubusercontent.com/TorTiT/HiBobAssigment/main/employee_list.json"
+  );
+
   if (employeeData && Array.isArray(employeeData.data)) {
     const cleanedData = cleanupEmployeeData(employeeData.data); // Apply the cleanup function to your employee data
     console.log("Cleaned and Deduplicated Data:", cleanedData);
