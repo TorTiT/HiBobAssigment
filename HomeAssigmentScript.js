@@ -87,6 +87,7 @@ function cleanupEmployeeData(employees) {
             ? parseFloat(employee.age)
             : null
           : null,
+      department: employee.department ? employee.department.trim() : null,
       errors: errors.length ? errors : null,
     };
 
